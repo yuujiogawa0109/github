@@ -1,0 +1,28 @@
+h1{
+	font-size:100px;
+	color: #fff;
+	
+}
+img{
+	width:300px;
+	height:400px;
+	display: inline-block;
+	
+}
+.img{
+	float:left;
+	padding-left: 250px;
+	
+}
+.pet{
+	text-align: center;
+background-color: #008080;
+padding-bottom: 20px;
+}
+.contents{
+	padding:0 0 300px 0;
+	margin-top:0;
+}
+p{
+	font-size: 20px;
+}
