@@ -75,14 +75,14 @@ transition: all 0.3s;
     width:300px;
   height:150px;
   float:right;
-  margin-right: 160px;
+  margin-right: 250px;
 
 }
 .b{
   position: relative;
     width:300px;
   height:150px;
-  margin-left: 160px;
+  margin-left: 250px;
  
 }
 .c{
@@ -90,21 +90,21 @@ transition: all 0.3s;
     width:300px;
   height:150px;
   float:right;
-  margin:80px 160px 0 0;
+  margin:80px 250px 0 0;
 
 }
 .d{
   position: relative;
     width:300px;
   height:150px;
-  margin:80px 0 0 160px;
+  margin:80px 0 0 250px;
 
 }
 .e{
   position: relative;
     width:300px;
   height:150px;
-  margin:80px 160px 0 0;
+  margin:80px 250px 0 0;
   float:right;
 
 }
