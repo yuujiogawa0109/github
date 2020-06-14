@@ -52,10 +52,10 @@
   		</div>
   		
   	</div>
-    <div class="acsess sa sa--up">
-      <h1>⇓　sns　⇓</h1>
+    <div class="acsess ">
+      <h1 class="sa sa--up">⇓　sns　⇓</h1>
       <div class="twitter">
-        <a href="#" class="item"><img src="img1004.png" alt="twitter"></a>
+        <a class="sa sa--up" href="#" class="item"><img src="img1004.png" alt="twitter"></a>
       </div>
     </div>
     <div class="end">
@@ -66,7 +66,7 @@
 var scrollAnimationElm = document.querySelectorAll('.sa');
 var scrollAnimationFunc = function() {
   for(var i = 0; i < scrollAnimationElm.length; i++) {
-    var triggerMargin = 1000;
+    var triggerMargin = 100;
     if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
       scrollAnimationElm[i].classList.add('show');
     }
@@ -85,6 +85,7 @@ $(function() {
     }, 4000
   );
 });
+
   </script>
   </body>
 </html>
