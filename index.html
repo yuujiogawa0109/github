@@ -6,7 +6,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8">
     
   </script>
-
   </head>
   <body>
   	<header>
@@ -24,36 +23,36 @@
   			<h1>Welcome<br>To<br>Mypage</h1>
   	</div>
   	<div class="main">
-      <h1>⇓　contents　⇓</h1>
+      <h1 class="sa sa--up">⇓　contents　⇓</h1>
   		<div class="contents">
-  		  <div class="a">
+  		  <div class="a sa sa--up">
   			<a href="profile.html" class="item"><img src="img1001.jpg" alt="profile"></a>
   			<h3>profile</h3>
   		  </div>
-        <div class="b">
+        <div class="b sa sa--up">
   			<a href="hoby.html" class="item"><img src="img1003.jpg" alt="profile"></a>
   			<h3>hoby</h3>
        </div>
-       <div class="c">
+       <div class="c sa sa--up">
   			<a href="pet.html" class="item"><img src="img1002.jpg" alt="profile"></a>
   			<h3>pet</h3>
       </div>
-      <div class="d">
+      <div class="d sa sa--up">
   			<a href="blog.html" class="item"><img src="IMG_2351.JPG" alt="profile"></a>
   			<h3>blog</h3>
       </div>
-      <div class="e">
+      <div class="e sa sa--up">
         <a href="blog.html" class="item"><img src="img1005.jpg" alt="profile"></a>
         <h3>sports</h3>
       </div>
-      <div class="f">
+      <div class="f sa sa--up">
         <a href="blog.html" class="item"><img src="img1006.jpg" alt="profile"></a>
         <h3>career</h3>
       </div>
   		</div>
   		
   	</div>
-    <div class="acsess">
+    <div class="acsess sa sa--up">
       <h1>⇓　sns　⇓</h1>
       <div class="twitter">
         <a href="#" class="item"><img src="img1004.png" alt="twitter"></a>
@@ -62,8 +61,30 @@
     <div class="end">
       <h1>Thank You <br>For<br>Reading Mypage</h1>
     </div>
-      <script src="js.js">
-    
+      <script type="text/javascript">
+
+var scrollAnimationElm = document.querySelectorAll('.sa');
+var scrollAnimationFunc = function() {
+  for(var i = 0; i < scrollAnimationElm.length; i++) {
+    var triggerMargin = 200;
+    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+      scrollAnimationElm[i].classList.add('show');
+    }
+  }
+}
+window.addEventListener('load', scrollAnimationFunc);
+window.addEventListener('scroll', scrollAnimationFunc);
+$(function() {
+  var i = 1;
+  setInterval(function() {
+    if(i > 4) i = 1;
+
+    $(".title").css("background","url('img"+i+".jpg')");
+    i++;
+
+    }, 4000
+  );
+});
   </script>
   </body>
 </html>
